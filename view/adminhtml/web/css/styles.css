@@ -1,0 +1,29 @@
+.admin__fieldset-wrapper-content {
+    background-color:bisque;
+}
+.notes-wrapper {
+    padding: 20px;
+    background-color:aliceblue;
+}
+
+.notes-wrapper h2 {
+    font-weight:bold;
+    padding: 5px 0;
+}
+.notes-wrapper ul {
+    padding-left:20px;
+}
+.notes-wrapper .sample-file-download {
+    border: solid 1px;
+    padding: 10px;
+}
+.notes-wrapper .sample-file-download:hover {
+    background-color: antiquewhite;
+}
+#package {margin-top: 5px}
+.fieldset.admin__fieldset, #shell-area {
+    display: none;
+}
+.action-activate-extension {margin-left: 5px}
+.admin__field {width: 700px}
+.activation-form {margin-top: 60px!important;}

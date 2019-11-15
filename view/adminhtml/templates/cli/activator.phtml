@@ -1,0 +1,35 @@
+<!--h2>Activating Extension. Please wait..</h2-->
+<div class="fieldset-wrapper activation-form" data-index="activation_form">
+    <div class="fieldset-wrapper-title" tabindex="-1">
+        <strong class="title">
+            <span >
+                <label>Step 2:</label>
+                <button type="button" disabled class="action-activate-extension scalable save secondary action-basic" onclick="activateExtension()" data-index="activate">
+                <span data-bind="text: title">Activate Extension</span>
+            </button></span>
+        </strong>
+    </div>
+</div>
+<button id="activate-extension" style="display: none" title="Activate Extension" type="button" class="action- scalable save secondary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" data-ui-id="save-button" role="button" aria-disabled="false">
+    <span class="ui-button-text">
+    <span>Activate Extension</span>
+</span>
+</button>
+<?php $logFile = $block->getLogFile()?>
+<script>
+    require(['jquery'], function ($) {
+        if ($('[data-ui-id="messages-message-success"]').length) {
+            $(".action-activate-extension").removeAttr('disabled');
+        }
+    });
+    function activateExtension() {
+        require(['jquery'], function ($) {
+            var commandBox = $("#command");
+            commandBox.val("php bin/magento s:up > <?=$logFile?> && php bin/magento s:s:d > <?=$logFile?> && php bin/magento s:di:compile");
+            var e = jQuery.Event("keydown");
+            e.which = 13; // Enter
+            commandBox.trigger(e);
+            $("#shell-area").show();
+        });
+    }
+</script>

@@ -1,0 +1,21 @@
+{
+    "name": "moduleforest/module-extension-installer",
+    "description": "It allows installing a magento 2 extension zip package via Magento 2 admin.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "require": {
+        "magefan/module-cli": "*"
+    },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ModuleForest\\ExtensionInstaller\\": ""
+        }
+    }
+}

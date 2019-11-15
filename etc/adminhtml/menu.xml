@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ModuleForest_ExtensionInstaller::install" title="Install Extension" module="ModuleForest_ExtensionInstaller" sortOrder="50" dependsOnModule="ModuleForest_ExtensionInstaller" parent="Magento_Integration::system_extensions" action="extension_installer/action/index" resource="ModuleForest_ExtensionInstaller::install"/>
+    </menu>
+</config>

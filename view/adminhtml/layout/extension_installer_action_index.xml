@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="ModuleForest_ExtensionInstaller::css/styles.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <!--block class="ModuleForest\ExtensionInstaller\Block\Adminhtml\Install" name="extension.installer.container"/-->
+            <uiComponent name="extension_install_form"/>
+        </referenceContainer>
+    </body>
+</page>
