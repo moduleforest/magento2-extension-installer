@@ -1,5 +1,5 @@
 {
-    "name": "moduleforest/module-extension-installer",
+    "name": "moduleforest/extension-installer",
     "description": "It allows installing a magento 2 extension zip package via Magento 2 admin.",
     "type": "magento2-module",
     "version": "1.0.0",

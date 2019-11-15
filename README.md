@@ -9,7 +9,7 @@ both can be done from a single page.
 
 ## Installation Instructions
 
-1. composer require moduleforest/module-extension-installer
+1. composer require moduleforest/extension-installer
 2. php bin/magento setup:upgrade
 
 ## Extension path in admin
